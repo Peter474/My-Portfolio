@@ -139,8 +139,28 @@ footer {
 @media (max-width:1024px){
     .skills { grid-template-columns:repeat(2,1fr); }
     .projects { grid-template-columns:repeat(2,1fr); }
+    .hero img { 
+        width:500px; 
+        margin-top:-180px;
+
+    }
+      #about {
+            margin-bottom: -100px; 
+              }
 }
 @media (max-width:768px){
-    .hero { flex-direction:column; text-align:center; }
+    .hero { 
+        flex-direction:column;
+         text-align:center; 
+        
+        }
+    .hero-text h2 {
+         font-size:26px;
+            margin-top:100px;
+         }
+       
+  
+
     .skills, .projects { grid-template-columns:1fr; }
 }
+
