@@ -1,150 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peter Emad | Frontend Developer Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peter Emad | Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress"></div>
 
-    <header>
-        <h1>Peter Emad</h1>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-        <nav class="nav">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h2>Frontend Developer</h2>
-            <p>I'm Peter Emad, a passionate frontend developer creating responsive and modern websites using HTML, CSS, JavaScript, and frameworks.</p>
-            <a href="Peter Emad CV.pdf" download>
-                <button class="btn">
-                    <i class="fas fa-download"></i> Download CV
-                </button>
-            </a>
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-bar"></div>
+
+  <!-- ─── HEADER ─────────────────────────────── -->
+  <header id="header">
+    <div class="logo">Peter<span>.</span></div>
+    <nav id="desktop-nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="nav-cta">Let's Talk</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- ─── HERO ────────────────────────────────── -->
+  <div class="hero" id="hero">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <div class="hero-tag-dot"></div>
+          Available for Work
         </div>
-       <img src="WhatsApp Image 2025-11-01 at 10.13.24_8aeae1a9.jpg" alt="Profile Photo" />
-    </section>
-
-    <section class="section" id="about">
-        <h2>About Me</h2>
-        <p>
-           I specialize in frontend development, building responsive, modern, and clean websites. I enjoy creating UI/UX designs and interactive interfaces. My goal is to deliver high-quality web solutions that provide excellent user experiences across all devices.
+        <h1 class="hero-name">
+          <div class="line-dim">Hi, I'm</div>
+          <div>Peter</div>
+          <div class="line-accent">Emad.</div>
+        </h1>
+        <p class="hero-sub">
+          A frontend developer crafting <strong>fast, responsive, and visually stunning</strong> web experiences that feel great on every device.
         </p>
-    </section>
-
-    <section class="section" id="skills">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill-item">HTML</div>
-            <div class="skill-item">CSS</div>
-            <div class="skill-item">JavaScript</div>
-            <div class="skill-item">Bootstrap</div>
-            <div class="skill-item">React (Basic)</div>
-            <div class="skill-item">Git & GitHub</div>
+        <div class="hero-actions">
+          <a href="Peter Emad CV.pdf" download>
+            <button class="btn-primary"><i class="fas fa-download"></i> Download CV</button>
+          </a>
+          <a href="#projects">
+            <button class="btn-ghost">View Projects <i class="fas fa-arrow-right"></i></button>
+          </a>
         </div>
-    </section>
+      </div>
 
-    <section class="section" id="projects">
-        <h2>Projects</h2>
-        <div class="projects">
-            <a href="https://weight-progress-tracker-lilac.vercel.app/" class="project-card">
-                 <img src="we.png" alt="Engage Dark Shop" />
-                <div>
-                    <h3> Weight Progress Tracker</h3>
-                    <p>Fitness app</p>
-                </div>
-            </a> 
-            <a href="https://engage-5gn4.vercel.app/" class="project-card">
-                 <img src="WhatsApp Image 2025-11-16 at 14.58.54_ef7d5907.jpg" alt="Engage Dark Shop" />
-                <div>
-                    <h3>Engage Dark Shop</h3>
-                    <p>Modern e-commerce template.</p>
-                </div>
-            </a>
-
-            <a href="https://w-template-kohl.vercel.app/" class="project-card">
-                <img src="Screenshot 2025-11-21 222046.png" alt="Wedding Invitation" />
-                <div>
-                    <h3>Wedding Invitation</h3>
-                    <p>Beautiful wedding invitation template.</p>
-                </div>
-            </a>
-
-            <a href="https://goal-countdown-brown.vercel.app/" class="project-card">
-                <img src="Screenshot 2025-11-21 222146.png" alt="Goal Tracker" />
-                <div>
-                    <h3>Goal Tracker</h3>
-                    <p>Track goals and countdowns effectively.</p>
-                </div>
-            </a>
-            
-            <a href="#" class="project-card">
-                        <img src="proto.png" alt="Portfolio Website"/>
-                <div>
-                    <h3>My Portfolio</h3>
-                    <p>Personal portfolio website</p>
-                </div>
-            </a>
-
-            <a href="https://peter474.github.io/To-do-list/" class="project-card">
-                <img src="todo.png" alt="To-Do List App"/>
-                <div>
-                    <h3>To-Do List App</h3>
-                    <p>Manage tasks easily</p>
-                </div>
-            </a>
-
-            <a href="https://notes-app-orpin-nine.vercel.app/" class="project-card">
-                    <img src="notes.png" alt="Notes App"/>
-                <div>
-                    <h3>Notes App</h3>
-                    <p>Create & save notes</p>
-                </div>
-            </a>
-        <a href="https://family-bakery-tau.vercel.app/" class="project-card">
-                    <img src="bakery.png" alt="bakery App"/>
-                <div>
-                    <h3>Bakery Family</h3>
-                    <p>Responsive bakery website with interactive features and smooth animations</p>
-                </div>
-            </a>
+      <!-- Profile Photo -->
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-frame">
+          <img src="WhatsApp Image 2025-11-01 at 10.13.24_8aeae1a9.jpg" alt="Peter Emad"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fallback-img" style="display:none"><i class="fas fa-user-circle"></i></div>
+          <div class="hero-chip chip-1">⚡ React</div>
+          <div class="hero-chip chip-2">🎨 CSS Magic</div>
+          <div class="hero-chip chip-3">📐 Responsive</div>
         </div>
-    </section>
-
-    <section class="section" id="contact">
-        <h2>Contact</h2>
-        <p>Email: pemad5944@gmail.com</p>
-        <p>WhatsApp: +201225403583</p>
-        <div class="socials">
-            <a href="https://www.facebook.com/peter.emad.658485" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/peter_emad111/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/Peter474" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/peter-emad-4911a9328/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <div class="hero-badge">
+          <div class="hero-badge-icon">🚀</div>
+          <div>
+            <div class="hero-badge-label">Projects Built</div>
+            <div class="hero-badge-val">8+</div>
+          </div>
         </div>
-    </section>
-    
-    <footer>
-        <p>© 2025 Peter Emad. All Rights Reserved.</p>
-    </footer>
-    
-    <script src="script.js"></script>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── MARQUEE STRIP ───────────────────────── -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span class="marquee-item">HTML & CSS</span>
+      <span class="marquee-item">JavaScript</span>
+      <span class="marquee-item">React</span>
+      <span class="marquee-item">Bootstrap</span>
+      <span class="marquee-item">Git & GitHub</span>
+      <span class="marquee-item">Responsive Design</span>
+      <span class="marquee-item">UI/UX</span>
+      <span class="marquee-item">Vercel Deploy</span>
+      <span class="marquee-item">HTML & CSS</span>
+      <span class="marquee-item">JavaScript</span>
+      <span class="marquee-item">React</span>
+      <span class="marquee-item">Bootstrap</span>
+      <span class="marquee-item">Git & GitHub</span>
+      <span class="marquee-item">Responsive Design</span>
+      <span class="marquee-item">UI/UX</span>
+      <span class="marquee-item">Vercel Deploy</span>
+    </div>
+  </div>
+
+  <!-- ─── ABOUT ───────────────────────────────── -->
+  <section id="about">
+    <div class="section-label reveal">About Me</div>
+    <h2 class="section-title reveal reveal-delay-1">Turning ideas<br><span class="text-muted">into interfaces.</span></h2>
+    <div class="about-grid">
+      <p class="about-text reveal reveal-delay-2">
+        I specialize in frontend development, building <strong>responsive, modern, and clean websites</strong>.
+        I enjoy creating UI/UX designs and interactive interfaces.<br><br>
+        My goal is to deliver <strong>high-quality web solutions</strong> that provide excellent user
+        experiences across all devices — from the tiniest phone screen to a 4K monitor.
+      </p>
+      <div class="about-stats">
+        <div class="stat-card reveal reveal-delay-2">
+          <div class="stat-num" data-count="8">0</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-3">
+          <div class="stat-num" data-count="6">0</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-4">
+          <div class="stat-num" data-count="100">0</div>
+          <div class="stat-label">% Passion</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-5">
+          <div class="stat-num" data-count="1">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ──────────────────────────────── -->
+  <section id="skills">
+    <div class="section-label reveal">Expertise</div>
+    <h2 class="section-title reveal reveal-delay-1">My skill<br><span class="text-muted">arsenal.</span></h2>
+    <div class="skills-grid">
+      <div class="skill-tile reveal">
+        <div class="skill-icon">🧱</div>
+        <div class="skill-info">
+          <div class="skill-name">HTML</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="95"></div></div>
+        </div>
+      </div>
+      <div class="skill-tile reveal reveal-delay-1">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-info">
+          <div class="skill-name">CSS</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="90"></div></div>
+        </div>
+      </div>
+      <div class="skill-tile reveal reveal-delay-2">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-info">
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="80"></div></div>
+        </div>
+      </div>
+      <div class="skill-tile reveal reveal-delay-1">
+        <div class="skill-icon">🅱️</div>
+        <div class="skill-info">
+          <div class="skill-name">Bootstrap</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="85"></div></div>
+        </div>
+      </div>
+      <div class="skill-tile reveal reveal-delay-2">
+        <div class="skill-icon">⚛️</div>
+        <div class="skill-info">
+          <div class="skill-name">React</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="55"></div></div>
+        </div>
+      </div>
+      <div class="skill-tile reveal reveal-delay-3">
+        <div class="skill-icon">🐙</div>
+        <div class="skill-info">
+          <div class="skill-name">Git & GitHub</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="75"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ────────────────────────────── -->
+  <section id="projects">
+    <div class="section-label reveal">Portfolio</div>
+    <h2 class="section-title reveal reveal-delay-1">Things I've<br><span class="text-muted">shipped.</span></h2>
+    <div class="projects-grid">
+
+      <a href="https://weight-progress-tracker-lilac.vercel.app/" class="project-card reveal" target="_blank">
+        <div class="project-thumb">
+          <img src="we.png" alt="Weight Progress Tracker"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="project-thumb-placeholder" style="display:none">🏋️</div>
+          <div class="project-overlay"><div class="project-overlay-btn">View Live ↗</div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="project-tag">Fitness</span><span class="project-tag">JS</span></div>
+          <div class="project-title">Weight Progress Tracker</div>
+          <div class="project-desc">Personal fitness tracking app to monitor and visualize weight progress over time.</div>
+          <div class="project-link">Visit Project <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="https://engage-5gn4.vercel.app/" class="project-card reveal reveal-delay-1" target="_blank">
+        <div class="project-thumb">
+          <img src="WhatsApp Image 2025-11-16 at 14.58.54_ef7d5907.jpg" alt="Engage Dark Shop"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="project-thumb-placeholder" style="display:none">🛒</div>
+          <div class="project-overlay"><div class="project-overlay-btn">View Live ↗</div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="project-tag">E-Commerce</span><span class="project-tag">CSS</span></div>
+          <div class="project-title">Engage Dark Shop</div>
+          <div class="project-desc">Modern e-commerce template with dark aesthetic and smooth shopping experience.</div>
+          <div class="project-link">Visit Project <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="https://w-template-kohl.vercel.app/" class="project-card reveal reveal-delay-2" target="_blank">
+        <div class="project-thumb">
+          <img src="Screenshot 2025-11-21 222046.png" alt="Wedding Invitation"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="project-thumb-placeholder" style="display:none">💍</div>
+          <div class="project-overlay"><div class="project-overlay-btn">View Live ↗</div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="project-tag">Template</span><span class="project-tag">HTML/CSS</span></div>
+          <div class="project-title">Wedding Invitation</div>
+          <div class="project-desc">Beautiful, elegant wedding invitation template with smooth animations.</div>
+          <div class="project-link">Visit Project <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="https://goal-countdown-brown.vercel.app/" class="project-card reveal" target="_blank">
+        <div class="project-thumb">
+          <img src="Screenshot 2025-11-21 222146.png" alt="Goal Tracker"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="project-thumb-placeholder" style="display:none">🎯</div>
+          <div class="project-overlay"><div class="project-overlay-btn">View Live ↗</div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="project-tag">Productivity</span><span class="project-tag">JS</span></div>
+          <div class="project-title">Goal Tracker</div>
+          <div class="project-desc">Track goals and countdowns effectively with a clean, distraction-free interface.</div>
+          <div class="project-link">Visit Project <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="https://peter474.github.io/To-do-list/" class="project-card reveal reveal-delay-1" target="_blank">
+        <div class="project-thumb">
+          <img src="todo.png" alt="To-Do List"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="project-thumb-placeholder" style="display:none">✅</div>
+          <div class="project-overlay"><div class="project-overlay-btn">View Live ↗</div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="project-tag">Productivity</span><span class="project-tag">JavaScript</span></div>
+          <div class="project-title">To-Do List App</div>
+          <div class="project-desc">Manage daily tasks easily with a simple and intuitive to-do interface.</div>
+          <div class="project-link">Visit Project <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="https://notes-app-orpin-nine.vercel.app/" class="project-card reveal reveal-delay-2" target="_blank">
+        <div class="project-thumb">
+          <img src="notes.png" alt="Notes App"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="project-thumb-placeholder" style="display:none">📝</div>
+          <div class="project-overlay"><div class="project-overlay-btn">View Live ↗</div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="project-tag">Utility</span><span class="project-tag">LocalStorage</span></div>
+          <div class="project-title">Notes App</div>
+          <div class="project-desc">Create, edit, and save notes with persistent local storage.</div>
+          <div class="project-link">Visit Project <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="https://family-bakery-tau.vercel.app/" class="project-card reveal" target="_blank">
+        <div class="project-thumb">
+          <img src="bakery.png" alt="Bakery Family"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="project-thumb-placeholder" style="display:none">🥐</div>
+          <div class="project-overlay"><div class="project-overlay-btn">View Live ↗</div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="project-tag">Business</span><span class="project-tag">Animation</span></div>
+          <div class="project-title">Bakery Family</div>
+          <div class="project-desc">Responsive bakery website with interactive features and smooth animations.</div>
+          <div class="project-link">Visit Project <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="#" class="project-card reveal reveal-delay-1">
+        <div class="project-thumb">
+          <img src="proto.png" alt="Portfolio"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="project-thumb-placeholder" style="display:none">👤</div>
+          <div class="project-overlay"><div class="project-overlay-btn">You're Here ✦</div></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="project-tag">Portfolio</span><span class="project-tag">HTML/CSS/JS</span></div>
+          <div class="project-title">My Portfolio</div>
+          <div class="project-desc">This very portfolio — a showcase of my work, skills, and personality.</div>
+          <div class="project-link">You're Here <i class="fas fa-star"></i></div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─────────────────────────────── -->
+  <section id="contact">
+    <div class="section-label reveal" style="justify-content:center">Get In Touch</div>
+    <h2 class="section-title reveal reveal-delay-1">Let's build<br><span class="text-muted">something.</span></h2>
+    <p class="contact-sub reveal reveal-delay-2">Have a project in mind? I'd love to hear about it. Send me a message and let's make it happen.</p>
+
+    <div class="contact-card reveal reveal-delay-3">
+      <div class="contact-row">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <div>
+          <div class="contact-row-label">Email</div>
+          <div class="contact-row-val">pemad5944@gmail.com</div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+        <div>
+          <div class="contact-row-label">WhatsApp</div>
+          <div class="contact-row-val">+20 122 540 3583</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="socials-row reveal reveal-delay-4">
+      <a href="https://www.facebook.com/peter.emad.658485" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/peter_emad111/" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/Peter474" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/peter-emad-4911a9328/" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ──────────────────────────────── -->
+  <footer>
+    <div class="footer-logo">Peter<span>.</span></div>
+    <div>Built with ❤️ — © 2025 Peter Emad</div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
