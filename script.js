@@ -23,7 +23,7 @@ function animateRing() {
 animateRing();
 
 // Cursor grows on hoverable elements
-document.querySelectorAll('a, button, .project-card, .stat-card, .skill-tile, .social-btn').forEach(el => {
+document.querySelectorAll('a, button, .project-card, .stat-card, .skill-tile, .social-btn, .timeline-card').forEach(el => {
   el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
   el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
 });
